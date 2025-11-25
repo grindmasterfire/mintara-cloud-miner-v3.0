@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Mintara Cloud Miner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Rajdhani', 'sans-serif'],
+            },
+            colors: {
+              // MINTARA TEAL (Primary)
+              mint: {
+                400: '#5FFADF',
+                500: '#00E6C3',
+                600: '#00B89C',
+                900: '#004D41',
+              },
+              // WEALTH GOLD (Secondary)
+              phoenix: {
+                400: '#FFE14D',
+                500: '#FFD700',
+                600: '#CCAC00',
+                900: '#665600'
+              },
+              // OBSIDIAN (Background)
+              dark: {
+                900: '#1A1A1E',
+                950: '#0D0D0F',
+                800: '#25252A'
+              },
+              // GLACIAL (Permafrost)
+              blue: {
+                400: '#85C7EE',
+                500: '#5DADE2',
+                600: '#2E86C1',
+                900: '#154360'
+              },
+              // SYSTEM
+              gold: {
+                500: '#FFD700',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0D0D0F;
+        color: #E0E0E0;
+        overscroll-behavior: none;
+      }
+      ::-webkit-scrollbar { width: 4px; height: 4px; }
+      ::-webkit-scrollbar-track { background: #0D0D0F; }
+      ::-webkit-scrollbar-thumb { background: #333; border-radius: 0px; }
+      .glass-panel {
+        background: rgba(20, 20, 25, 0.9);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
